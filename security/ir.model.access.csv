@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ntropy_fifa22_jugador,ntropy.fifa22.jugador,model_ntropy_fifa22_jugador,base.group_user,1,1,1,1
+access_ntropy_fifa22_posicion,ntropy.fifa22.posicion,model_ntropy_fifa22_posicion,base.group_user,1,1,1,1
+access_ntropy_fifa22_temporada,ntropy.fifa22.temporada,model_ntropy_fifa22_temporada,base.group_user,1,1,1,1
