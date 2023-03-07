@@ -3,7 +3,7 @@ from odoo import models, fields
 PLAYER_POSITIONS = [('GK', 'POR'),
                     ('RWB', 'LD'),
                     ('RB', 'DFD'),
-                    ('CB', 'DCF'),
+                    ('CB', 'DFC'),
                     ('LF', 'DFI'),
                     ('LWB', 'LI'),
                     ('CDM', 'MCD'),
@@ -25,3 +25,10 @@ class Posicion(models.Model):
 
     name = fields.Char(string='Posición', required=True)
     code = fields.Selection(PLAYER_POSITIONS)
+
+    def name_get(self):
+        result = []
+        for rec in self:
+            name = '[' + rec.code + '] ' + rec.name
+            result.append((rec.id, name))
+        return result

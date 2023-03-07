@@ -16,6 +16,10 @@
         # Wizard
         # Reports
         # Views
+        # 'views/main_menu.xml',
+        'views/jugador.xml',
+        'views/temporada.xml',
+        'views/posiciones.xml',
         # Data
         # Sequence
         # Sample

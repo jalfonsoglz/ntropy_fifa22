@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_posicion_tree" model="ir.ui.view">
+            <field name="name">fifa22.posicion.tree</field>
+            <field name="model">ntropy.fifa22.posicion</field>
+            <field name="arch" type="xml">
+                <tree string="Posiciones">
+                    <field name="name"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_posicion_form" model="ir.ui.view">
+            <field name="name">fifa22.posicion.form</field>
+            <field name="model">ntropy.fifa22.posicion</field>
+            <field name="arch" type="xml">
+                <form string="Posiciones">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_fifa22_posicion" model="ir.actions.act_window">
+            <field name="name">Posiciones</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">ntropy.fifa22.posicion</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click para agregar posición
+                </p>
+            </field>
+        </record>
+        <menuitem id="submenu_fifa22_config" name="Configuraciones" parent="main_menu_ntropy_fifa22" sequence="50"/>
+        <menuitem id="submenu_fifa22_posicion" name="Posiciones" parent="submenu_fifa22_config" sequence="30"
+                  action="action_fifa22_posicion"/>
+    </data>
+</odoo>

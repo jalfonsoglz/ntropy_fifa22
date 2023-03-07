@@ -1,0 +1,11 @@
+name, edad, pais_id, position_ids/id, altura, valor_mercado, salario, cuota_rescision, academy
+Lionel Messi, 34, Argentina, 1|2, 170, 100000000, 560000, 200000000, Yes
+Cristiano Ronaldo, 37, Portugal, 7|11, 187, 75000000, 450000, 150000000, No
+Kylian Mbappe, 23, France, 9|10, 178, 120000000, 250000, 220000000, No
+Neymar Jr., 30, Brazil, 7|11, 175, 90000000, 600000, 180000000, No
+Mohamed Salah, 29, Egypt, 7|10|11, 175, 80000000, 300000, 160000000, No
+Sadio Mane, 29, Senegal, 7|9|11, 175, 60000000, 250000, 120000000, No
+Kevin De Bruyne, 30, Belgium, 8, 181, 120000000, 450000, 220000000, No
+Harry Kane, 28, England, 9, 188, 150000000, 500000, 250000000, No
+Luka Modric, 36, Croatia, 5, 172, 20000000, 220000, 40000000, No
+Jan Oblak, 29, Slovenia, 13, 188, 100000000, 400000, 200000000, No
